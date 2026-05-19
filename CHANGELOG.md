@@ -5,13 +5,21 @@ All notable changes to the Stratix Python SDK will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+**Latest version:** [1.6.1](https://github.com/LayerLens/stratix-python/releases/tag/v1.6.1) — 2026-05-15
+
 ## [Unreleased]
 
 Things we're actively working on. Want to help? Check the [issues](https://github.com/LayerLens/stratix-python/issues) or [discussions](https://github.com/LayerLens/stratix-python/discussions).
 
-### Coming Soon
+### Added
 
-### Under Consideration
+### Changed
+
+### Fixed
+
+### Deprecated
+
+### Removed
 
 ## [1.6.1] - 2026-05-15
 
