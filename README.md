@@ -61,6 +61,10 @@ Stratix is built differently. It gives you production-grade evaluation infrastru
 | OpenTelemetry export    | Native OTLP exporter                           | Not built-in               | Native OTLP             | Not built-in        | Native (OpenInference) |
 | Pricing model           | Free public data; premium for org features     | Per-trace pricing          | Per-event pricing       | Open source + cloud | Open source + cloud    |
 
+## Pricing
+
+**Free to start.** `PublicClient` is free with an API key–query 200+ models, 50+ benchmarks, and run head-to-head comparisons. Advanced features (traces, custom judges, scorers, CI gates) require **Stratix Premium**. Sign up and purchase credits at [app.layerlens.ai](https://app.layerlens.ai).
+
 ## Installation
 
 > [!NOTE]
