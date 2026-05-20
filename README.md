@@ -226,7 +226,7 @@ export LAYERLENS_STRATIX_API_KEY="your-api-key"
 python3 -c "from layerlens import PublicClient; pc = PublicClient(); print(pc.models.get(page_size=5))"
 ```
 
-Then explore the [Quick Start guide](https://layerlens.gitbook.io/stratix-python-sdk), try a [cookbook recipe](./examples/cookbook/), or [join the Discord](https://discord.gg/layerlens) to ask questions and share what you're building.
+Then explore the [Quick Start guide](https://layerlens.gitbook.io/stratix-python-sdk), try a [cookbook recipe](https://github.com/LayerLens/stratix-python/tree/main/samples), or [join the Discord](https://discord.gg/layerlens) to ask questions and share what you're building.
 
 ---
 
