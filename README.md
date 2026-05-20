@@ -14,7 +14,6 @@
   <a href="https://pypi.org/project/layerlens/"><img src="https://img.shields.io/pypi/v/layerlens?color=blue" alt="PyPI" /></a>
   <a href="https://pypi.org/project/layerlens/"><img src="https://img.shields.io/pypi/pyversions/layerlens" alt="Python" /></a>
   <a href="https://github.com/LayerLens/stratix-python/stargazers"><img src="https://img.shields.io/github/stars/LayerLens/stratix-python?style=social" alt="GitHub Stars" /></a>
-  <a href="https://github.com/LayerLens/stratix-python/actions"><img src="https://github.com/LayerLens/stratix-python/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
   <a href="https://codecov.io/gh/LayerLens/stratix-python"><img src="https://codecov.io/gh/LayerLens/stratix-python/branch/main/graph/badge.svg" alt="Coverage" /></a>
   <a href="https://github.com/LayerLens/stratix-python/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache%202.0-green" alt="License" /></a>
   <!-- Replace with actual Discord server ID once created -->
