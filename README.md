@@ -7,7 +7,9 @@
 <h1 align="center">Stratix Python SDK</h1>
 
 <p align="center">
-  <strong>Ship AI that actually works. Evaluate 200+ models across 100+ benchmarks, trace agent behavior, build custom judges, and gate CI/CD on eval results.</strong>
+  <strong>Ship AI that actually works. 
+    
+  Evaluate 200+ models across 100+ benchmarks, trace agent behavior, build custom judges, and gate CI/CD on eval results.</strong>
 </p>
 
 <p align="center">
