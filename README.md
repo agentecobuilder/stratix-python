@@ -9,7 +9,7 @@
 <p align="center">
   <strong>Ship AI that actually works. 
     
-  Evaluate 200+ models across 100+ benchmarks, trace agent behavior, build custom judges, and gate CI/CD on eval results.</strong>
+  Evaluate 200+ models across 50+ benchmarks, trace agent behavior, build custom judges, and gate CI/CD on eval results.</strong>
 </p>
 
 <p align="center">
@@ -27,13 +27,13 @@
   <a href="#quick-start">Quick Start</a> &middot;
   <a href="#how-stratix-compares">Compare</a> &middot;
   <a href="https://layerlens.gitbook.io/stratix-python-sdk">Docs</a> &middot;
-  <a href="#examples">Examples</a> &middot;
+  <a href="#samples">Samples</a> &middot;
   <a href="https://discord.gg/layerlens">Discord</a>
 </p>
 
 ---
 <p align="center">
-  <img src="./demo-stratix.gif" alt="Stratix Python SDK demo: list 217 frontier models in 5 lines of Python" width="720">
+  <img src="./demo-stratix.gif" alt="Stratix Python SDK demo: list frontier models in 5 lines of Python" width="720">
 </p>
 
 ## Why Stratix?
@@ -42,7 +42,7 @@ Stratix is built differently. It gives you production-grade evaluation infrastru
 
 **What makes it click:**
 
-- **200+ models and 100+ benchmarks, ready to query.** No scraping leaderboards, no CSV wrangling. `pc.models.get()` and you're looking at real evaluation data.
+- **200+ models and 50+ benchmarks, ready to query.** No scraping leaderboards, no CSV wrangling. `pc.models.get()` and you're looking at real evaluation data.
 - **Prompt-level comparisons.** Not just "Model A scores 82%." You get the exact prompts where Model A passes and Model B fails, with outcome filters to find the interesting divergences.
 - **A 4-generation eval ladder.** Start with heuristic checks, graduate to model-graded scoring, add deliberation panels, then build auto-optimized GEPA judges. One SDK covers the full spectrum.
 - **Agent trace evaluation.** Upload a multi-step agent trace, replay it, and judge every step. Built for the world where agents do real work.
@@ -52,7 +52,7 @@ Stratix is built differently. It gives you production-grade evaluation infrastru
 
 | Capability              | **Stratix**                                    | LangSmith                  | Langfuse                | DeepEval            | Phoenix (Arize)        |
 | ----------------------- | ---------------------------------------------- | -------------------------- | ----------------------- | ------------------- | ---------------------- |
-| Pre-built benchmarks    | 100+ benchmarks, 200+ models                   | No public benchmarks       | No public benchmarks    | 50+ metrics         | Bring your own         |
+| Pre-built benchmarks    | 50+ benchmarks, 200+ models                   | No public benchmarks       | No public benchmarks    | 50+ metrics         | Bring your own         |
 | Prompt-level comparison | Native head-to-head with outcome filters       | Side-by-side runs (manual) | Side-by-side runs + Playground/Experiments (UI Supported)            | Manual setup        | Not built-in           |
 | Custom judge builder    | Auto-optimized GEPA judges with budget control | LLM-as-judge (manual)      | LLM-as-judge (manual)   | Basic LLM judges    | LLM-as-judge templates |
 | Agent trace evaluation  | Upload, replay, judge every step               | Trace logging + annotation | Trace logging + scoring | Trace logging only  | Trace visualization    |
@@ -108,11 +108,11 @@ print(f"{models.total_count} models available")
 
 # Compare two models head-to-head on a benchmark
 comparison = pc.comparisons.compare_models(
-    benchmark_id="aime2024",
-    model_id_1="openai/gpt-4o",
-    model_id_2="anthropic/claude-opus-4",
-    outcome_filter="comparison_fails",  # prompts where model 2 fails
-)
+       benchmark_key="aime2024",
+       model_key_1="openai/gpt-4o",
+       model_key_2="anthropic/claude-3.5-haiku",
+       outcome_filter="comparison_fails",  # prompts where model 2 fails
+   )
 
 print(comparison)
 ```
@@ -121,9 +121,9 @@ That's it! You're comparing frontier models on real benchmark data. **[See full 
 
 ### Next steps
 
-- **[Run a custom evaluation](./examples/)** ➡️ score your own model on any benchmark
-- **[Gate CI/CD on eval results](./examples/ci-gate)** ➡️ `layerlens ci run --threshold 0.8` in your pipeline
-- **[Upload and evaluate agent traces](./examples/agent-traces)** ➡️ multi-step trace analysis
+- **[Run a custom evaluation](./samples/core/)** ➡️ score your own model on any benchmark
+- **[Gate CI/CD on eval results](./samples/cicd/)** ➡️ `layerlens ci run --threshold 0.8` in your pipeline
+- **[Upload and evaluate agent traces](./samples/instrument/)** ➡️ multi-step trace analysis
 
 ## CLI
 
